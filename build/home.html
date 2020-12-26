@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blood Bank | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyD1_DHe6MRLvYqyw9G-Cw2YS5VWP_J2W8I",
+        authDomain: "uit-project-blood-bank.firebaseapp.com",
+        databaseURL: "https://uit-project-blood-bank.firebaseio.com",
+        projectId: "uit-project-blood-bank",
+        storageBucket: "uit-project-blood-bank.appspot.com",
+        messagingSenderId: "824057067083",
+        appId: "1:824057067083:web:98cda8dd226517dcbc3fce",
+        measurementId: "G-1F25XR2M3L"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      const auth = firebase.auth();
+      const fs = firebase.firestore();
+    </script>
+</head>
+<body>
+    <div class="spinner-grow" id="spinner"></div>
+    <div class="container-fluid homepage-main-wrapper" id="spinner-wrapper">
+      <!-- Header Sec Start -->
+      <div class="row" id="wrap-header-main-row">
+        <div class="container">
+          <div class="row header-row">
+            <div class="col-4 header-fou">
+              <div id="img-logo"><a href="https://uit-project-blood-bank.firebaseapp.com/home.html" id="logo"><img src="images/bloodbanklogo.png" alt="Blood Bank" width="30px"><span id="logo-text">BLOODBANK</span></a></div>
+            </div>
+            <div class="col-4 header-thr text-center">
+              <p id="contact-header"><span id="phone-num-header">CALL &nbsp;&nbsp; <b>:</b>&nbsp;&nbsp; +92 3118454158</span></p>
+            </div>
+            <div class="col-4 text-right header-fiv">
+              <a href="#" onclick="signOut()" id="logout-btn-header"><i class="fa fa-lock"></i><span>LOGOUT</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="row" id="wrap-nav-main-row">
+          <div class="container" id="wrap-nav-container">
+            <nav class="navbar navbar-expand-md  navbar-light bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav " id="navbar-ul">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about-sec">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://uit-project-blood-bank.firebaseapp.com/becomeadonor.html">BECOME A DONOR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://uit-project-blood-bank.firebaseapp.com/findblood.html">FIND BLOOD DONOR</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="https://uit-project-blood-bank.firebaseapp.com/donorlist.html">DONOR LIST</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-sec">CONTACT US</a>
+                    </li>
+                </ul>
+                </div>
+            </nav>
+          </div>
+        </div>
+        <!-- Header Sec end -->
+        <div class="row" id="wrap-home-bg-img">
+            <div class="container">
+              <div class="row home-bg-img-row mt-3">
+                <div class="col-6 home-bg-img-six-one">
+                    <h3>Donate Blood Save Life!</h3>
+                    <p>YOUR BLOOD <br> CAN BRING SMILE <br> IN OTHER PERSON FACE</p>
+                </div>
+                <div class="col-6 home-bg-img-six-two">
+                  <h3>Donate Blood Give The Gift Of Life!</h3>
+                  <a href="https://uit-project-blood-bank.firebaseapp.com/becomeadonor.html"><button>Become A Donor</button></a>
+                  <a href="https://uit-project-blood-bank.firebaseapp.com/findblood.html"><button>Find Blood Donor</button></a>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Section about start-->
+        <div class="row" id="about-sec">
+          <div class="col-12 text-center">
+              <h1>Blood Bank About Us</h1>
+          </div>
+        </div>
+          <div class="row" id="wrap-about-sec">
+              <div class="container">
+                <div class="row about-sec-row mt-3">
+                  <div class="col-6 about-sec-six-one">
+                    <h3>We Are Blood Donor Group!</h3>
+                    <p>DONATE BLOOD <br> AND INSPIRES OTHERS</p>
+                  </div>
+                  <div class="col-6 about-sec-six-two">
+                    <div id="about-img-div">
+                      <img src="images/we-are-blood-donor-group.jpg" alt="" width="100%">
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="row" id="wrap-about-team-main-row">
+            <div class="container">
+              <div class="row text-center mb-3 text-white" id="our-team">
+                <div class="col-12">
+                  <h1>Our Team</h1>
+                </div>
+              </div>
+              <div class="row about-team-row">
+                  <div class="col-4 about-card-fou-one">
+                    <div class="card" id="card-for-team">
+                      <img src="images/team-member-1.png">
+                      <h2>Muneeb Khan</h2>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, fugiat.</p>
+                      <p><button><a href="https://wa.me/923482455269" target="_blank">Contact</a></button></p>
+                    </div>
+                  </div>
+                  <div class="col-4 about-team-fou-two">
+                    <div class="card" id="card-for-team">
+                      <img src="images/team-member-2.png">
+                      <h2>Tabish Adnan</h2>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, fugiat.</p>
+                      <p><button><a href="https://wa.me/923118454158" target="_blank">Contact</a></button></p>
+                    </div>
+                  </div>
+                  <div class="col-4 about-team-fou-thr">
+                    <div class="card" id="card-for-team">
+                      <img src="images/team-member-3.PNG">
+                      <h2>Adnan Khan</h2>
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis, fugiat.</p>
+                      <p><button><a href="https://wa.me/923123365403" target="_blank">Contact</a></button></p>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          </div>
+        <!-- Section about end-->
+
+        <!-- Section contact start-->
+        <div class="row" id="contact-sec">
+            <div class="col-12 text-center">
+                <h1>Blood Bank Contact Us</h1>
+            </div>
+        </div>
+        <div class="row" id="wrap-contatus-form-main-row">
+            <div class="container">
+                <div class="row contactus-form-row">
+                    <div class="col-8 form-eig text-center">
+                        <h1 class="text-center">Contact Us Form</h1>
+                        <form id="contactus-form" autocomplete="off" name="contactus-form">
+                          <img src="form-icon/usern.png" alt="" id="contact-usern"><input type="text" id="contactus-sec-input-line-name" required placeholder="Name" name="name">
+                          <img src="form-icon/emailn.png" alt="" id="contact-emailn"><input type="email" id="contactus-sec-input-line-email" required placeholder="Email" name="email">
+                            <br><br>    
+                            <img src="form-icon/phonen.png" alt="" id="contact-phonen"><input type="number" id="contactus-sec-input-line-contact" required placeholder="Contact No" name="contactnumber">
+                            <img src="form-icon/cityn.png" alt="" id="contact-cityn"><input type="text" id="contactus-sec-input-line-city" required placeholder="City" name="city">
+                            <br><br>
+                            <img src="form-icon/subjectn.png" alt="" id="contact-subjectn"><input type="text" id="contactus-sec-input-line-three" required placeholder="Subject" name="subject">
+                            <br><br>
+                            <img src="form-icon/messagen.png" alt="" id="contact-messagen"><input type="text" id="contactus-sec-input-line-four" required placeholder="Message" name="message">
+                            <br><br>
+                            <p id="response-for-sendmessage">Your Message Hasbeen Send, Thank You For Feedback!</p>
+                            <button type="submit" class="btn btn-danger" id="sendmessage">Send Message</button>
+
+                        </form>
+                    </div>
+                    <div class="col-4 contact-info-fou">
+                      <h1 class="ml-3">Contact Info</h1>
+                      <div id="contact-info-wrap">
+                        <ul id="contact-info-ul">
+                          <li><span class="span-c-info-email"><i class="fa fa-at"></i></span>E-MAIL</li>
+                          <span id="contact-info-text"><a href="mailto:tabishadnan000@gmail.com" target="_blank" id="link-email">bloodbank@gmail.com</a></span>
+                          <li><span class="span-c-info-phone"><i class="fa fa-phone"></i></span>PHONE</li>
+                          <span id="contact-info-text"><a href="https://wa.me/923118454158" target="_blank">+92 3118454158</a></span>
+                          <li><span class="span-c-info-website"><i class="fa fa-globe"></i></span>WEBSITE</li>
+                          <span id="contact-info-text"><a href="https://uit-project-blood-bank.firebaseapp.com/home.html" id="link-web" target="_blank">www.bloodbank.com</a></span>
+                          <li><span class="span-c-info-address"><i class="fa fa-location-arrow"></i></span>LOCATION</li>
+                          <span id="contact-info-text"><a id="link-location" href="https://goo.gl/maps/eWqtN8aT3o36vV4C9" target="_blank">Drigh Road Cant Bazar Karahi.</a></span>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Section contact end-->
+
+        <!-- Footer Sec Start -->
+        <div class="row wrap-footer-main-row mt-3">
+          <div class="container">
+            <div class="row footer-row mt-3">
+              <div class="col-12">
+                <p class="footer-text-content">
+                  We are world largest and trustful blood donation center. We have been working since 2018 with a prestigious vision to helping patient to provide blood. We are working all over the world, organizing blood donation campaign to grow awareness among the people to donate blood.
+                </p>
+              </div>
+            </div>
+            <div class="row footer-social-icon">
+              <div class="col-12 text-center">
+                <a href="https://wa.me/923118454158" class="fa fa-whatsapp"></a>
+                <a href="https://www.linkedin.com/in/tabishadnan/" class="fa fa-linkedin"></a>
+                <a href="https://github.com/tabishadnan/" class="fa fa-github"></a>
+              </div>
+              <div class="col-12 text-center mt-3">
+                <h1 class="text-white">Made With Love</h1>
+              </div>
+              <div class="col-12 text-center mt-3">
+                <p class="text-white">Copyright © 2020. All Right Reserved By Blood Bank</p>
+                <p class="text-white">Design & Develop By Tabish Adnan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer Sec End -->
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      // Become A donor Page js //
+
+            // target all inputs 
+            var send_all_inputs = document.getElementsByTagName("input");
+
+            // target btn
+            var send_message_btn = document.getElementById("sendmessage");
+            document.getElementById('contactus-form').addEventListener("submit", function(event){
+                event.preventDefault();
+    
+            var name = document.forms["contactus-form"]["name"].value;
+            var email = document.forms["contactus-form"]["email"].value;
+            var contactnumber = document.forms["contactus-form"]["contactnumber"].value;
+            var city = document.forms["contactus-form"]["city"].value;
+            var subject = document.forms["contactus-form"]["subject"].value;
+            var message = document.forms["contactus-form"]["message"].value;
+            
+            
+            //  add messge
+            fs.collection('message').add({
+                name : name,
+                email : email,
+                contactnumber : contactnumber,
+                city : city,
+                subject : subject,
+                message : message
+            })
+            .then(res => {
+              for(var a=0; a<send_all_inputs.length; a++){
+                send_all_inputs[a].value = "";
+              };
+              document.getElementById("response-for-sendmessage").style.display = "block";
+                setTimeout(function(){
+                  document.getElementById("response-for-sendmessage").style.display = "none";
+                },5000);
+                return false;
+            })
+            });
+    </script>
+</body>
+</html>

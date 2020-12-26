@@ -1,0 +1,1224 @@
+ /* Media Query Start */
+ @media only screen and (max-width: 1024px) {
+    
+    #spinner {
+        position: absolute;
+        height: 35px;
+        width: 35px;
+        top: 55% !important;
+        left: 52% !important;
+        margin-left: -50px;
+        margin-top: -50px;
+        background-size: 100%;
+        background-image: url(../images/bloodbanklogo.png);
+    }
+
+    #signin-page-wrapper .form {
+        width: 35% !important;
+        margin: 0 auto;
+        margin-top: 8% !important;
+    }
+
+    div#signupform.form {
+        width: 35% !important;
+        margin: 0 auto;
+        margin-top: 8% !important;
+    }
+
+    #already-have-account {
+        margin-left: 20% !important;
+        color: #000000 !important;
+    }
+
+    #wrap-home-bg-img .home-bg-img-six-one {
+        padding: 60px 0px 60px 30px !important;
+    }
+
+    #wrap-home-bg-img .home-bg-img-six-two {
+        padding: 60px 0px 60px 0px !important;
+    }
+    a#logo img {
+        position: relative;
+        top: -2px;
+        width: 8%;
+    }
+    .home-bg-img-six-two button {
+        margin-top: 55px !important;
+        margin-left: 70px !important;
+        padding: 20px;
+        color: #fff;
+        background-color: #ed1b24;
+        outline: none !important;
+        border-radius: 20px;
+        width: 130px;
+        height: 130px;
+        border-width: 2px;
+        border-style: solid;
+    }
+
+    .about-team-row div#card-for-team {
+        margin: 0px 0px !important;
+    }
+
+    #contact-info-wrap ul#contact-info-ul i {
+        width: 48px !important;
+        height: 48px !important;
+        border: 1px solid grey;
+        border-radius: 48px;
+        color: #fff;
+        background-color: #ed1b24;
+        padding: 10px 12px;
+        margin-right: 18px;
+        font-size: 26px;
+        position: relative;
+        top: 10px;
+    }
+    form#contactus-form img {
+        position: absolute;
+        width: 7%;
+    }
+
+    #contact-info-wrap ul {
+        list-style-type: none;
+        padding-inline-start: 20px !important;
+    }
+
+    #contact-info-ul span#contact-info-text {
+        position: relative;
+        left: 25%;
+        color: gray;
+        top: -12px;
+    }
+
+    #response-for-sendmessage {
+        display: none;
+        position: absolute;
+        left: 12%;
+        font-size: 13px !important;
+        font-weight: bold;
+    }
+
+    input#contactus-sec-input-line-three {
+        width: 81% !important;
+    }
+
+    input#contactus-sec-input-line-four {
+        width: 81% !important;
+    }
+
+    #sendmessage {
+        position: relative;
+        left: 30% !important;
+        background-color: #ed1b24 !important;
+        outline: inherit !important;
+    }
+
+    img#contact-usern {
+        position: absolute;
+        left: 11% !important;
+        top: 17.5% !important;
+    }
+
+    img#contact-emailn {
+        position: absolute;
+        top: 17.5% !important;
+        right: 43%;
+    }
+
+    img#contact-phonen {
+        top: 36.5% !important;
+        left: 11% !important;
+    }
+
+    img#contact-cityn {
+        top: 37% !important;
+        right: 43.5% !important;
+    }
+
+    img#contact-subjectn {
+        bottom: 33% !important;
+        left: 11%;
+    }
+
+    img#contact-messagen {
+        bottom: 13.5% !important;
+        left: 11% !important;
+    }
+
+    /* Findblood page media query Start */
+
+    form#find-blood-donor-form {
+        width: 820px !important;
+    }
+
+    div#find-blood-form-wrapper {
+        border: 1px solid gainsboro;
+        padding: 80px 50px;
+        margin: 0px 2% !important;
+    }
+
+    /* Findblood page media query End */
+
+
+    /* Donorlist page media query End */
+    
+    /* Donorlist page media query End */
+
+
+    /* searchresult page media query Start */
+    
+  }
+
+  @media only screen and (max-width: 768px){
+
+    #spinner {
+        position: absolute;
+        height: 35px;
+        width: 35px;
+        top: 55% !important;
+        left: 53% !important;
+        margin-left: -50px;
+        margin-top: -50px;
+        background-size: 100%;
+        background-image: url(../images/bloodbanklogo.png);
+    }
+
+    #signin-page-wrapper .form {
+        width: 45% !important;
+        margin: 0 auto;
+        margin-top: 8% !important;
+    }
+
+    #signin-page-wrapper a.forgottenpassword {
+        margin-left: 45% !important;
+        color: #0088ff !important;
+    }
+
+    a#logo img {
+        position: relative;
+        top: -2px;
+        width: 12%;
+    }
+
+    div#signupform.form {
+        width: 45% !important;
+        margin: 0 auto;
+        margin-top: 8% !important;
+    }
+
+    #already-have-account {
+        margin-left: 15% !important;
+        color: #000000 !important;
+    }
+
+    #img-logo span#logo-text {
+        font-size: 22px !important;
+        color: #ffffff;
+        position: relative;
+        top: 3px;
+        left: 4px;
+        letter-spacing: 4px;
+    }
+     
+    #contact-header span#phone-num-header {
+        font-size: 17px !important;
+        color: #fff;
+        position: relative;
+        top: 8px;
+    }
+
+    ul#navbar-ul li {
+        padding: 0px 2px !important;
+    }
+
+    #wrap-home-bg-img .home-bg-img-six-one p {
+        font-size: 1rem !important;
+        line-height: 50px;
+    }
+
+    div#wrap-home-bg-img h3 {
+        font-size: 20px !important;
+    }
+
+    .home-bg-img-six-two button {
+        margin-top: 50px !important;
+        margin-left: 30px !important;
+        padding: 0px !important;
+        color: #fff;
+        background-color: #ed1b24;
+        outline: none !important;
+        border-radius: 20px;
+        width: 115px !important;
+        height: 85px !important;
+        border-width: 2px;
+        border-style: solid;
+    }
+
+    div#wrap-home-bg-img {
+        background-image: url(../images/bg-page-title-1.jpg);
+        background-blend-mode: overlay;
+        background-color: #00000085;
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+        height: 40vh !important;
+        color: #fff;
+    }
+
+    div#about-sec {
+        margin-top: 50px;
+        margin-bottom: 0px !important;
+        background-color: #ed1b24;
+        color: #fff;
+        padding: 10px 0px !important;
+    }
+
+    #wrap-about-sec .about-sec-six-one {
+        padding: 20px 0px 20px 30px !important;
+    }
+
+    #wrap-about-sec .about-sec-six-two {
+        padding: 20px 0px 20px 20px !important;
+    }
+
+    #wrap-about-sec .about-sec-six-one h3 {
+        font-size: 25px !important;
+    }
+
+    #wrap-about-sec .about-sec-six-one p {
+        font-size: 1rem !important;
+        line-height: 50px;
+    }
+
+    div#wrap-about-team-main-row {
+        padding: 20px 0px !important;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .about-team-row div.card {
+        padding: 10px 10px 0px 10px !important;
+    }
+
+    div#contact-sec {
+        margin-top: 50px !important;
+        margin-bottom: 20px !important;
+        background-color: #ed1b24;
+        color: #fff;
+        padding: 10px 0px !important;
+    }
+
+    div#card-for-team h1 {
+        font-size: 24px !important;
+        margin: 20px 0px 10px 0px!important;
+    }
+
+   .about-team-row div.col-4{
+        padding-right: 0px !important;
+        padding-left: 0px !important;
+   }
+
+   .about-team-row div#card-for-team {
+    margin: 0px 5px !important;
+   }
+
+   .contactus-form-row .form-eig{
+    flex: 100% !important;
+       max-width: 100% !important;
+   }
+
+   #sendmessage {
+    position: relative;
+    left: 31% !important;
+    background-color: #ed1b24 !important;
+    outline: inherit !important;
+   }
+
+   .contact-info-fou {
+    margin: 20px 0px 0px 0px;
+    flex: 100% !important;
+    max-width: 100% !important;
+   }
+
+   ul#contact-info-ul li {
+    font-weight: bold;
+    padding-top: 30px !important;
+    display: inline-block;
+    }
+
+    #contact-info-ul span#contact-info-text {
+        position: relative;
+        left: -9% !important;
+        color: gray;
+        top: 20px !important;
+    }
+
+    #contact-info-text a#link-web {
+        position: relative;
+        left: -1.5% !important;
+        margin-right: 0.5% !important;
+    }
+
+    #contact-info-text a#link-location {
+        position: relative;
+        left: -3.5% !important;
+    }
+
+    #contact-info-wrap ul {
+        list-style-type: none;
+        padding-inline-start: 30px !important;
+    }
+
+    img#contact-usern {
+        left: 10.5% !important;
+        top: 17% !important;
+    }
+
+    img#contact-emailn {
+        top: 17% !important;
+        right: 43.5% !important;
+    }
+
+    img#contact-phonen {
+        top: 36% !important;
+        left: 10.5% !important;
+    }
+
+    img#contact-cityn {
+        top: 36.5% !important;
+        right: 43.5% !important;
+    }
+
+    img#contact-subjectn {
+        bottom: 32.5% !important;
+        left: 10.5%;
+    }
+
+    img#contact-messagen {
+        bottom: 13% !important;
+        left: 10.5% !important;
+    }
+
+    /* Findblood page media query Start */
+
+    form#find-blood-donor-form {
+        width: 630px !important;
+    }
+
+    div#find-blood-form-wrapper {
+        border: 1px solid gainsboro;
+        padding: 80px 50px 80px 0px !important;
+        margin: 0px 3% !important;
+    }
+
+    /* Findblood page media query End */
+
+    /* donorprofile page media query Start */
+
+    #donor-profile-card-wrapper div img.card-img{
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        width: 80% !important;
+    }
+
+    /* donorprofile page media query End */
+
+    div#card-wrapper-search-result h1 {
+    padding: 20px 0px 20px 0px;
+    font-size: 20px !important;
+    }
+
+    div#card-wrapper-search-result p#custom-css-bgrp {
+        position: absolute;
+        background-color: #ed1b24;
+        color: #ffffff;
+        right: 0%;
+        height: 15%;
+        padding: 10px 14px !important;
+        font-size: 18px !important;
+        font-weight: bold;
+    }
+    /* searchresult page media query End */
+
+  }
+
+  @media only screen and (max-width: 736px){
+
+    #signin-page-wrapper a.forgottenpassword {
+        margin-left: 40% !important;
+        color: #0088ff !important;
+    }
+
+    #already-have-account {
+        margin-left: 10% !important;
+        color: #000000 !important;
+    }
+
+    .col-4.header-thr.text-center {
+        display: none;
+    }
+
+    .col-4.header-fou {
+        flex: 49% !important; 
+        max-width: 49% !important;
+        padding-left: 0px !important;
+    }
+
+    .col-4.text-right.header-fiv {
+        flex: 49% !important;
+        max-width: 49% !important;
+        padding-right: 0px !important;
+    }
+
+    ul#navbar-ul li {
+        padding: 0px 10px !important;
+        margin-top: 5px !important;
+    }
+
+    div#wrap-home-bg-img {
+        background-image: url(../images/bg-page-title-1.jpg);
+        background-blend-mode: overlay;
+        background-color: #00000085;
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+        height: 100vh !important;
+        color: #fff;
+    }
+
+    #wrap-home-bg-img .home-bg-img-six-one {
+        padding: 60px 0px 60px 0px !important;
+    }
+
+    .about-team-row div#card-for-team {
+        margin: 0px 0px !important;
+    }
+
+    div#wrap-home-bg-img h3 {
+        font-size: 16px !important;
+    }
+
+    .about-team-row div.col-4 {
+        padding-right: 0px !important;
+        padding-left: 10px !important;
+    }
+
+    #response-for-sendmessage {
+        display: none;
+        position: absolute;
+        left: 10%;
+        font-size: 12px !important;
+        font-weight: bold;
+    }
+
+    a#logo img {
+        position: relative;
+        top: -2px;
+        width: 10% !important;
+    }
+
+    .home-bg-img-six-two button {
+        margin-top: 50px !important;
+        margin-left: 10px !important;
+        padding: 0px !important;
+        color: #fff;
+        background-color: #ed1b24;
+        outline: none !important;
+        border-radius: 20px;
+        width: 115px !important;
+        height: 80px !important;
+        border-width: 2px;
+        border-style: solid;
+    }
+
+    #img-logo span#logo-text {
+        font-size: 25px !important;
+        color: #ffffff;
+        position: relative;
+        top: 3px;
+        left: 4px;
+        letter-spacing: 4px;
+    }
+
+    #wrap-about-sec .about-sec-six-one {
+        padding: 20px 0px 20px 0px !important;
+    }
+
+    #wrap-about-sec .about-sec-six-two {
+        padding: 20px 0px 20px 0px !important;
+    }
+
+    #wrap-about-sec .about-sec-six-one h3 {
+        font-size: 20px !important;
+    }
+
+    #sendmessage {
+        position: relative;
+        left: 29.5% !important;
+        background-color: #ed1b24 !important;
+        outline: inherit !important;
+    }
+
+    button.btn#sendmessage {
+        padding: .300rem .50rem !important;
+    }
+
+    .contactus-form-row .form-eig {
+        flex: 100% !important;
+        max-width: 100% !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    ul#contact-info-ul li {
+        font-weight: bold;
+        padding-top: 30px !important;
+        display: block;
+    }
+
+    .form-eig.text-center h1 {
+        font-size: 35px !important;
+    }
+
+    .contact-info-fou h1 {
+        font-size: 35px !important;
+    }
+    form#contactus-form img {
+        position: absolute;
+        width: 8%;
+    }
+
+    #contact-info-ul span#contact-info-text {
+        position: relative;
+        left: 14% !important;
+        color: gray;
+        top: -12px !important;
+    }
+
+    #contact-info-text a#link-web {
+        position: relative;
+        left: 0% !important;
+        margin-right: 0.5% !important;
+    }
+
+    #contact-info-text a#link-location {
+        position: relative;
+        left: 0% !important;
+    }
+
+    p.footer-text-content {
+        padding: 0px 10px !important;
+        text-align: justify;
+        color: #fff;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: rgba(0,0,0,.5);
+        border-color: rgba(0,0,0,.1);
+        position: relative;
+        left: -25px !important;
+    }
+
+    img#contact-usern {
+        left: 9% !important;
+        top: 16.5% !important;
+    }
+
+    img#contact-emailn {
+        top: 16.5% !important;
+        right: 42% !important;
+    }
+
+    img#contact-phonen {
+        top: 36.5% !important;
+        left: 9% !important;
+    }
+
+    img#contact-cityn {
+        top: 36.5% !important;
+        right: 42% !important;
+    }
+
+    img#contact-subjectn {
+        bottom: 33.5% !important;
+        left: 9%;
+    }
+
+    img#contact-messagen {
+        bottom: 13.5% !important;
+        left: 9% !important;
+    }
+
+    /* Become A donor page media query Start */
+
+    div#becomeadonor-sec input {
+        margin-top: 10px;
+        padding: 5px 15px;
+        width: 100% !important;
+    }
+
+    div#form-wrapper form div.col-4 {
+        max-width: 50% !important;
+        flex: 50% !important;
+    }
+
+    div#becomeadonor-sec label select {
+        margin-top: 10px;
+        padding: 5px 15px;
+        width: 100% !important;
+    }
+
+    /* Become A donor page media query End */
+
+    /* findblood page media query End */
+
+    form#find-blood-donor-form {
+    width: 500px !important;
+    }
+
+    #find-blood-donor-btn {
+        background-color: #ed1b24 !important;
+        padding: 4px 25px;
+        margin-top: 9px !important;
+        color: #ffffff;
+        letter-spacing: 2px !important;
+    }
+
+    form#find-blood-donor-form div label span {
+        position: absolute;
+        top: -25px;
+        left: 12% !important;
+    }
+
+    /* findblood page media query End */
+
+
+    /* donorprofile page media query Start */
+
+    #donor-profile-card-wrapper div img.card-img{
+        -ms-flex-negative: 0;
+        flex-shrink: 0;
+        width: 30% !important;
+    }
+
+    /* donorprofile page media query End */
+
+
+    /* searchresult page media query End */
+
+    div#card-wrapper-search-result {
+        width: 100% !important;
+        float: left;
+        margin: 5% 0% !important;
+    }
+
+    div#card-wrapper-search-result h1 {
+        padding: 20px 0px 20px 0px;
+        font-size: 30px !important;
+    }
+
+    /* searchresult page media query End */
+
+
+  }
+
+  @media only screen and (max-width: 684px){
+
+    #signin-page-wrapper .form {
+        width: 50% !important;
+        margin: 0 auto;
+        margin-top: 8% !important;
+    }
+
+    div#signupform.form {
+        width: 50% !important;
+        margin: 0 auto;
+        margin-top: 8% !important;
+    }
+  }
+
+  @media only screen and (max-width: 414px){
+
+    #spinner {
+        position: absolute;
+        height: 35px;
+        width: 35px;
+        top: 55% !important;
+        left: 57.5% !important;
+        margin-left: -50px;
+        margin-top: -50px;
+        background-size: 100%;
+        background-image: url(../images/bloodbanklogo.png);
+    }
+
+    #signin-page-wrapper .form {
+        width: 90% !important;
+        margin: 0 auto;
+        margin-top: 8% !important;
+    }
+
+    a#logout-btn-header {
+        margin-right: 12px;
+        position: relative;
+        top: -5px !important;
+        border: 2px solid white;
+    }
+
+    a#logo img {
+        position: relative;
+        top: -4px;
+        width: 9% !important;
+    }
+
+    #img-logo span#logo-text {
+        font-size: 30px !important;
+        color: #ffffff;
+        position: relative;
+        top: 3px;
+        left: 4px;
+        letter-spacing: 4px;
+    }
+
+    .navbar-light .navbar-toggler {
+        color: rgba(0,0,0,.5);
+        border-color: rgba(0,0,0,.1);
+        position: relative;
+        left: 0px !important;
+    }
+
+    #wrap-home-bg-img .home-bg-img-six-one {
+        padding: 10px 0px 0px 35px !important;
+        max-width: 100% !important;
+        flex: 100% !important;
+    }
+
+    #wrap-home-bg-img .home-bg-img-six-two {
+        padding: 50px 0px 0px 35px !important;
+        max-width: 100% !important;
+        flex: 100% !important;
+    }
+
+    .home-bg-img-six-two button {
+        margin-top: 30px !important;
+        margin-left: 10px !important;
+        padding: 0px !important;
+        color: #fff;
+        background-color: #ed1b24;
+        outline: none !important;
+        border-radius: 20px;
+        width: 109px !important;
+        height: 80px !important;
+        border-width: 2px;
+        border-style: solid;
+    }
+
+    div#wrap-home-bg-img {
+        background-image: url(../images/bg-page-title-1.jpg);
+        background-blend-mode: overlay;
+        background-color: #00000085;
+        background-size: cover;
+        background-position: top center;
+        background-repeat: no-repeat;
+        height: 80vh !important;
+        color: #fff;
+    }
+
+    .col-4.header-fou {
+        flex: 100% !important;
+        max-width: 100% !important;
+        padding-left: 0px !important;
+        text-align: center;
+    }
+
+    .col-4.text-right.header-fiv {
+        flex: 100% !important;
+        max-width: 100% !important;
+        padding-right: 0px !important;
+        text-align: center !important;
+        margin-top: 25px !important;
+    }
+
+    div#about-sec div h1 {
+        font-size: 25px !important;
+    }
+
+    #wrap-about-sec .about-sec-six-one {
+        padding: 20px 0px 20px 30px !important;
+        max-width: 100% !important;
+        flex: 100% !important;
+    }
+
+    #wrap-about-sec .about-sec-six-two {
+        padding: 0px 0px 20px 30px !important;
+        max-width: 93% !important;
+        flex: 93% !important;
+    }
+
+    div#our-team div h1 {
+        font-size: 25px !important;
+    }
+
+    .about-team-row div.col-4 {
+        max-width: 100%;
+        flex: 100%;
+        margin: 0px 20px !important;
+        padding-right: 10px !important;
+    }
+
+    .form-eig.text-center h1 {
+        font-size: 30px !important;
+    }
+
+    .about-team-row div#card-for-team {
+        margin: 15px 0px !important;
+    }
+
+    div#contact-sec div h1 {
+        font-size: 25px !important;
+    }
+
+    .contactus-form-row .form-eig {
+        flex: 100% !important;
+        max-width: 100% !important;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+    }
+
+    input#contactus-sec-input-line-name {
+        width: 85% !important;
+    }
+
+    input#contactus-sec-input-line-email {
+        width: 85% !important;
+    }
+
+    input#contactus-sec-input-line-contact {
+        width: 85% !important;
+    }
+
+    input#contactus-sec-input-line-city {
+        width: 85% !important;
+    }
+
+    input#contactus-sec-input-line-three {
+        width: 85% !important;
+    }
+
+    input#contactus-sec-input-line-four {
+        width: 85% !important;
+    }
+
+    p.footer-text-content {
+        padding: 0px 30px !important;
+        text-align: justify;
+        color: #fff;
+    }
+
+    form#contactus-form img {
+        position: absolute;
+        width: 10% !important;
+    }
+
+    img#contact-usern {
+        left: 7.5% !important;
+        top: 15% !important;
+    }
+
+    img#contact-emailn {
+        top: 28.5% !important;
+        left: 7.5% !important;
+    }
+
+    img#contact-phonen {
+        top: 42% !important;
+        left: 7.5% !important;
+    }
+
+    img#contact-subjectn {
+        bottom: 21.5% !important;
+        left: 7.5%;
+    }
+
+    img#contact-cityn {
+        top: 56% !important;
+        left: 7% !important;
+    }
+
+    img#contact-messagen {
+        bottom: 7.5% !important;
+        left: 7.5% !important;
+    }
+
+    .contact-info-fou {
+        margin: 80px 0px 0px 0px !important;
+        flex: 100% !important;
+        max-width: 100% !important;
+    }
+
+
+    #sendmessage {
+        position: relative;
+        left: 0% !important;
+        top: 20px;
+        background-color: #ed1b24 !important;
+        outline: inherit !important;
+    }
+
+    #response-for-sendmessage {
+        position: absolute;
+        left: 10%;
+        padding-top: 68px;
+        font-size: 12px !important;
+        font-weight: bold;
+    }
+
+    form#contactus-form br {
+        display: none;
+    }
+
+    #contactus-form input {
+        margin-top: 20px;
+    }
+
+    .contact-info-fou h1 {
+        font-size: 30px !important;
+    }
+
+    #contact-info-ul span#contact-info-text {
+        position: relative;
+        left: 20% !important;
+        color: gray;
+        top: -12px !important;
+    }
+
+    ul#contact-info-ul li {
+        font-weight: bold;
+        padding-top: 10px !important;
+        display: block;
+    }
+    .row.footer-social-icon div p {
+        font-size: 14px !important;
+    }
+
+    /* Become A donor page media query Start */
+
+    div#form-wrapper form div.col-4 {
+        max-width: 100% !important;
+        flex: 100% !important;
+    }
+
+    div#becomeadonor-sec div h1 {
+        font-size: 35px !important;
+    }
+    /* Become A donor page media query End */
+
+    /* findblood page media query End */
+
+    div#form-wrapper div h1 {
+        font-size: 35px !important;
+    }
+
+    form#find-blood-donor-form {
+        width: 100% !important;
+    }
+
+    div#find-blood-form-wrapper {
+        border: 1px solid gainsboro;
+        padding: 40px 0px !important;
+        margin: 0px 3% !important;
+    }
+
+    form#find-blood-donor-form div.col-5 {
+        max-width: 100%;
+        flex: 100%;
+    }
+
+    form#find-blood-donor-form div.col-2 {
+        max-width: 100%;
+        flex: 100%;
+    }
+
+    form#find-blood-donor-form div label span {
+        position: absolute;
+        top: 6px !important;
+        left: 5% !important;
+    }
+
+    form#find-blood-donor-form label select {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 5px 15px;
+        width: 100% !important;
+    }
+
+    form#find-blood-donor-form div label {
+        width: 100% !important;
+    }
+
+    #find-blood-donor-btn {
+        background-color: #ed1b24 !important;
+        padding: 4px 25px;
+        margin-top: 30px !important;
+        color: #ffffff;
+        letter-spacing: 2px !important;
+    }
+
+    /* findblood page media query End */
+
+    /* Donorlist page media query Start */
+    
+    #circle-as-a-dp {
+        background-color: #ed1b24 !important;
+        padding: 10px 14px !important;
+        width: 45px;
+        height: 45px;
+        border-radius: 45px;
+        color: #ffffff;
+        font-weight: bold;
+        position: relative;
+        top: -14px !important;
+        left: 40% !important;
+    }
+    table#donor-list-table tr td:nth-child(3),table#donor-list-table tr td:nth-child(4) {
+        display: none;
+    }
+
+    #circle-as-a-dp {
+        background-color: #ed1b24 !important;
+        padding: 9px 14px !important;
+        width: 40px !important;
+        height: 40px !important;
+        border-radius: 40px;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 14px !important;
+        position: relative;
+        top: -8px !important;
+        left: 2% !important;
+    }
+
+    .table-responsive table#donor-list-table  td, .table th {
+        padding: 1.2rem 0px !important;
+        vertical-align: top;
+        border-top: none !important;
+        text-align: left !important;
+    }
+    /* Donorlist page media query End */
+
+    #donor-profile-card-wrapper p#bloodgroup {
+        background-color: #ed1b24;
+        color: #fff;
+        padding: 10px 25px !important;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #donor-profile-card-wrapper div#card-body h1 {
+        font-size: 35px !important;
+    }
+
+    div#card-wrapper-search-result h1 {
+        padding: 20px 0px 20px 0px;
+        font-size: 25px !important;
+    }
+
+    #card-for-team img {
+        height: 50%;
+        width: 50%;
+        border-radius: 50%;
+        position: relative;
+        left: 25% !important;
+        margin-bottom: 20px;
+    }
+  }
+
+  @media only screen and (max-width: 375px){
+
+    #signin-page-wrapper .form {
+        width: 90% !important;
+        margin: 0 auto;
+        margin-top: 8% !important;
+    }
+
+    #signin-page-wrapper a.forgottenpassword {
+        margin-left: 35% !important;
+        color: #0088ff !important;
+    }
+
+    div#response-signup {
+        font-size: 14px !important;
+    }
+
+    div#response-signin {
+        font-size: 14px !important;
+    }
+
+    div#signupform.form {
+        width: 90% !important;
+        margin: 0 auto;
+        margin-top: 8% !important;
+    }
+
+    #already-have-account {
+        margin-left: 0% !important;
+        color: #000000 !important;
+    }
+
+    /* Become A donor page media query Start */
+
+    div#becomeadonor-sec div h1 {
+        font-size: 30px !important;
+    }
+
+    /* Become A donor page media query End */
+
+    /* findblood page media query Start */
+
+    div#form-wrapper div h1 {
+        font-size: 30px !important;
+    }
+    /* findblood page media query End */
+
+    #donor-profile-card-wrapper div#card-body h1 {
+        font-size: 30px !important;
+    }
+
+    #donor-profile-card-wrapper p#bloodgroup {
+        background-color: #ed1b24;
+        color: #fff;
+        padding: 8px 22px !important;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    button.btn#sendmessage {
+        padding: .200rem .50rem !important;
+    }
+
+    form#contactus-form img {
+        position: absolute;
+        width: 11% !important;
+    }
+
+    #contact-info-ul span#contact-info-text {
+        position: relative;
+        left: 22% !important;
+        color: gray;
+        top: -12px !important;
+    }
+
+    #contact-info-text a#link-web {
+        position: relative;
+        left: 0.5% !important;
+        margin-right: 0.5% !important;
+    }
+  }
+
+
+ /* Media Query End */

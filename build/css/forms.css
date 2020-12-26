@@ -1,0 +1,205 @@
+/* Signup Form Css Start */
+body{
+    background-color: rgb(61, 61, 61) !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.btn-primary.focus, .btn-primary:focus {
+  color: #fff;
+  border-color: 0px !important;
+  box-shadow: none !important;
+}
+.form-header img {
+  width: 30%;
+}
+.form-control{
+    min-height: 38px;
+    box-shadow: none;
+    border-color: #e1e1e1;
+    border: 1px solid #212529 !important;
+  }
+  .form-control:focus{
+    border-color: #ed1b24;
+  }	
+    .form-control, .btn{        
+        border-radius: 3px;
+    }
+  .form-header{
+    margin: -30px -30px 20px;
+    padding: 18px 30px 10px;
+    text-align: center;
+    background: #ed1b24;
+    border-bottom: 1px solid #eee;
+    color: #fff;
+  }
+  .form-header h2{
+    font-size: 34px;
+    font-weight: bold;
+        margin: 0 0 10px;
+    font-family: 'Pacifico', sans-serif;
+    }
+  .form-header p{
+    margin: 20px 0 15px;
+    font-size: 17px;
+    line-height: normal;
+    font-family: 'Courgette', sans-serif;
+  }
+  .form {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+    div.wrap-signup{
+    color: #999;
+    border-radius: 3px;
+      margin-bottom: 15px;
+        background: #f0f0f0;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 20px 30px;
+    }
+
+  .form .form-group{
+    margin-bottom: 15px;
+  }		
+  input:-webkit-autofill {
+    background-color: #FAFFBD !important;
+}
+  .form label{
+    font-weight: normal;
+    font-size: 13px;
+  }
+    .form input[type="checkbox"]{
+    margin-top: 2px;
+  }
+  /* Change the white to any color ; */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active  {
+    box-shadow: 0 0 0 30px white inset !important;
+}
+    .form .btn{        
+        font-size: 16px;
+        font-weight: bold;
+    background: #ed1b24;
+    border: none;
+    min-width: 30%;
+    }
+  .form .btn:hover, .form .btn:focus{
+    background: #ed1b24 !important;
+        outline: none;
+  }
+    .form a:hover{
+    text-decoration: none;
+    color: #ed1b24;
+  }
+  
+  .alert-warning {
+    color: #000000 !important;
+    background-color: #fcf8e3;
+    border-color: #faebcc;
+  }
+  #signupform div.alert {
+    padding: 4px 8px !important;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: lightblue !important;
+    height: auto;
+  }
+  #wrap-response-signup{
+    display: none;
+    color: #000000 !important;
+    /* font-weight: bold; */
+  }
+  #already-have-account{
+      margin-left: 30%;
+      color: #000000 !important;
+  }
+  span#already-have-account a {
+    margin-left: 5px;
+}
+/* Signup Form Css End */
+
+/* Signin Form Css End */
+.form label {
+  font-weight: normal;
+  font-size: 13px;
+  color: black;
+}
+#wrap-response-signin{
+    color: #000000 !important;
+    /* font-weight: bold; */
+  }
+  #signinform div.alert {
+    padding: 4px 8px !important;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: lightblue !important;
+    height: auto;
+  }
+  div.wrap-signin{
+    color: #999;
+    border-radius: 3px;
+    margin-bottom: 15px;
+    background: #f0f0f0;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 20px 30px;
+    }
+    a.forgottenpassword {
+    margin-left: 50%;
+    color: #0088ff !important;
+}
+a.forgottenpassword:focus, a.forgottenpassword:hover {
+  color: #ed1b24 !important;
+  text-decoration: none;
+}
+#wrap-response-signin{
+  display: none;
+  color: #000000 !important;
+}
+#reset-p-form div.alert {
+  padding: 8px !important;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: lightblue !important;
+  height: auto;
+}
+div.wrap-reset {
+  color: #999;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  background: #f0f0f0;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+  padding: 30px;
+}
+#wrap-response-reset-p{
+  /* display: none; */
+  color: #000000 !important;
+  font-weight: bold;
+}
+/* Signin Form Css End */
+
+/* Spinner Css Start */
+#spinner{
+  position: absolute;
+  height: 35px;
+  width: 35px;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  background-size: 100%;
+  background-image: url(../images/bloodbanklogo.png);
+}
+#signin-page-wrapper{
+  display: none;
+}
+#spinner-wrapper{
+  display: none;
+}

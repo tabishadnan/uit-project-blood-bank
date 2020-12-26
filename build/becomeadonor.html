@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blood Bank | Become A Donor</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyD1_DHe6MRLvYqyw9G-Cw2YS5VWP_J2W8I",
+        authDomain: "uit-project-blood-bank.firebaseapp.com",
+        databaseURL: "https://uit-project-blood-bank.firebaseio.com",
+        projectId: "uit-project-blood-bank",
+        storageBucket: "uit-project-blood-bank.appspot.com",
+        messagingSenderId: "824057067083",
+        appId: "1:824057067083:web:98cda8dd226517dcbc3fce",
+        measurementId: "G-1F25XR2M3L"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      const auth = firebase.auth();
+      const fs = firebase.firestore();
+    </script>
+</head>
+<body>
+    <div class="spinner-grow" id="spinner"></div>
+    <div class="container-fluid" id="spinner-wrapper">
+      <!-- Header Sec Start -->
+      <div class="row" id="wrap-header-main-row">
+        <div class="container">
+          <div class="row header-row">
+            <div class="col-4 header-fou">
+              <div id="img-logo"><a href="https://uit-project-blood-bank.firebaseapp.com/home.html" id="logo"><img src="images/bloodbanklogo.png" alt="Blood Bank" width="30px"><span id="logo-text">BLOODBANK</span></a></div>
+            </div>
+            <div class="col-4 header-thr text-center">
+              <p id="contact-header"><span id="phone-num-header">CALL &nbsp;&nbsp; <b>:</b>&nbsp;&nbsp; +92 3118454158</span></p>
+            </div>
+            <div class="col-4 text-right header-fiv">
+              <a href="#" onclick="signOut()" id="logout-btn-header"><i class="fa fa-lock"></i><span>LOGOUT</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="row" id="wrap-nav-main-row">
+          <div class="container" id="wrap-nav-container">
+            <nav class="navbar navbar-expand-md  navbar-light bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav " id="navbar-ul">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://uit-project-blood-bank.firebaseapp.com/home.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://uit-project-blood-bank.firebaseapp.com/becomeadonor.html">BECOME A DONOR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://uit-project-blood-bank.firebaseapp.com/findblood.html">FIND BLOOD DONOR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://uit-project-blood-bank.firebaseapp.com/donorlist.html">DONOR LIST</a>
+                    </li>
+                </ul>
+                </div>
+            </nav>
+          </div>
+        </div>
+        <!-- Header Sec end -->
+
+        <!-- Request blood sec start -->
+        <div class="row" id="becomeadonor-sec">
+            <div class="container">
+                <div class="row" id="form-wrapper">
+                    <div class="col-12 mb-3">
+                      <h1 class="">Become A Donor :</h1>
+                    </div>
+                    <form action="" class="form-inline" id="myform" name="b_donor" autocomplete="off">
+                      <div class="col-4 firstname-col-four">
+                        <label for=""><span id="firstname">First Name * <b id="firstname-invalid"></b></span><br>
+                          <input type="text" id="becomeadonor-sec-input-firstname" placeholder="First Name" name="firstname">
+                        </label>
+                      </div>
+                      <div class="col-4 lastname-col-four">
+                        <label for=""><span id="lastname">Last Name * <b id="lastname-invalid"></b></span><br>
+                          <input type="text" id="becomeadonor-sec-input-lastname" placeholder="Last Name" name="lastname">
+                        </label>
+                      </div>
+                      <div class="col-4 email-col-four">
+                        <label for=""><span id="email">Email * <b id="email-invalid"></b></span><br>
+                          <input type="email" id="becomeadonor-sec-input-email" placeholder="Email" name="email">
+                        </label>
+                      </div>
+                      <div class="col-4 phonenumber-col-four">
+                        <label for=""><span id="phonenumber">Phone Number * <b id="phonenumber-invalid"></b></span><br>
+                          <input type="number" id="becomeadonor-sec-input-phonenumber" placeholder="Phone Number" name="phonenumber">
+                        </label>
+                      </div>
+                      <div class="col-4 age-col-four">
+                        <label for=""><span id="age">Age * <b id="age-invalid"></b></span><br>
+                          <input type="number" id="becomeadonor-sec-input-age" placeholder="Age" name="age">
+                        </label>
+                      </div>
+                      <div class="col-4 weight-col-four">
+                        <label for=""><span id="weight">Weight * <b id="weight-invalid"></b></span><br>
+                          <input type="number" id="becomeadonor-sec-input-weight" placeholder="Weight in Kg" name="weight">
+                        </label>
+                      </div>
+                      <div class="col-4 gender-col-four">
+                        <label for=""><span id="gender">Gender * <b id="gender-invalid"></b></span><br>
+                          <select name="gender" id="becomeadonor-sec-gender">
+                            <option value="">--Gender--</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Custom">Custom</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        </label>
+                      </div>
+                      <div class="col-4 bloodgroup-col-four">
+                        <label for=""><span id="bloodgroup">Blood Group * <b id="bloodgroup-invalid"></b></span><br>
+                          <select name="bloodgroup" id="becomeadonor-sec-bloodgroup">
+                            <option value="">--Blood Group--</option>
+                            <option value="A-">A-</option>
+                            <option value="A+">A+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="B-">B-</option>
+                            <option value="B+">B+</option>
+                            <option value="O-">O-</option>
+                            <option value="O+">O+</option>
+                        </select>
+                        </label>
+                      </div>
+                      <div class="col-4 city-col-four">
+                        <label for=""><span id="city">City * <b id="city-invalid"></b></span><br>
+                          <select name="city" id="becomeadonor-sec-city">
+                            <option value="">--Select City--</option>
+                            <option value="Karachi">Karachi</option>
+                            <option value="Islamabad">Islamabad</option>
+                            <option value="Lahore">Lahore</option>
+                            <option value="Faisalabad">Faisalabad</option>
+                            <option value="Quetta">Quetta</option>
+                            <option value="Sargodha">Sargodha</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Rawalpindi">Rawalpindi</option>
+                            <option value="Multan">Multan</option>
+                        </select>
+                        </label>
+                      </div>
+                      <div class="col-12 text-center btn-col-twelve">
+                        <button type="submit" class="btn btn-danger" id="becomeadonor-btn">Become A Donor</button>
+                      </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <!-- Request blood sec end -->
+
+        <!-- Footer Sec Start -->
+        <div class="row wrap-footer-main-row mt-3">
+          <div class="container">
+            <div class="row footer-row mt-3">
+              <div class="col-12">
+                <p class="footer-text-content">
+                  We are world largest and trustful blood donation center. We have been working since 2018 with a prestigious vision to helping patient to provide blood. We are working all over the world, organizing blood donation campaign to grow awareness among the people to donate blood.
+                </p>
+              </div>
+            </div>
+            <div class="row footer-social-icon">
+              <div class="col-12 text-center">
+                <a href="https://wa.me/923118454158" class="fa fa-whatsapp"></a>
+                <a href="https://www.linkedin.com/in/tabishadnan/" class="fa fa-linkedin"></a>
+                <a href="https://github.com/tabishadnan/" class="fa fa-github"></a>
+              </div>
+              <div class="col-12 text-center mt-3">
+                <h1 class="text-white">Made With Love</h1>
+              </div>
+              <div class="col-12 text-center mt-3">
+                <p class="text-white">Copyright © 2020. All Right Reserved By Blood Bank</p>
+                <p class="text-white">Design & Develop By Tabish Adnan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer Sec End -->
+    </div>
+    <script src="js/jquery.js"></script>
+        <script src="js/app.js"></script>
+        <script>
+            // Become A donor Page js //
+
+            // target all inputs 
+            var become_a_donor_all_inputs = document.getElementsByTagName("input");
+
+            // target all inputs 
+            var become_a_donor_all_select = document.getElementsByTagName("select");
+
+            // target btn
+            var become_a_donor_btn = document.getElementById("becomeadonor-btn");
+            document.getElementById('myform').addEventListener("submit", function(event){
+                event.preventDefault();
+    
+            var firstname = document.forms["b_donor"]["firstname"].value;
+            var lastname = document.forms["b_donor"]["lastname"].value;
+            var email = document.forms["b_donor"]["email"].value;
+            var phonenumber = document.forms["b_donor"]["phonenumber"].value;
+            var age = document.forms["b_donor"]["age"].value;
+            var weight = document.forms["b_donor"]["weight"].value;
+            var gender = document.forms["b_donor"]["gender"].value;
+            var bloodgroup = document.forms["b_donor"]["bloodgroup"].value;
+            var city = document.forms["b_donor"]["city"].value;
+            
+            if (firstname.length<1) {
+                document.getElementById("firstname-invalid").innerHTML = "Invalid";
+            }else if (firstname.length != "") {
+                document.getElementById("firstname-invalid").innerHTML = "";
+            }
+            if (lastname.length<1) {
+                document.getElementById("lastname-invalid").innerHTML = "Invalid";
+            }else if (lastname.length != "") {
+                document.getElementById("lastname-invalid").innerHTML = "";
+            }
+            if (email.length<1) {
+                document.getElementById("email-invalid").innerHTML = "Invalid";
+            }else if (email.length != "") {
+                document.getElementById("email-invalid").innerHTML = "";
+            }
+            if (phonenumber.length<1) {
+                document.getElementById("phonenumber-invalid").innerHTML = "Invalid";
+            } else if (phonenumber.length != "") {
+                document.getElementById("phonenumber-invalid").innerHTML = "";
+            }
+            if (age.length<1) {
+                document.getElementById("age-invalid").innerHTML = "Invalid";
+            } else if (age.length != "") {
+                document.getElementById("age-invalid").innerHTML = "";
+            }
+            if (weight.length<1) {
+                document.getElementById("weight-invalid").innerHTML = "Invalid";
+            }else if (weight.length != 0) {
+                document.getElementById("weight-invalid").innerHTML = "";
+            }
+            if (gender.length<1) {
+                document.getElementById("gender-invalid").innerHTML = "Invalid";
+            }else if (gender.length != 0) {
+                document.getElementById("gender-invalid").innerHTML = "";
+            }
+            if (bloodgroup.length<1) {
+                document.getElementById("bloodgroup-invalid").innerHTML = "Invalid";
+            }else if (bloodgroup.lengt != 0) {
+                document.getElementById("bloodgroup-invalid").innerHTML = "";
+            }
+            if (city.length<1) { 
+                document.getElementById("city-invalid").innerHTML = "Invalid";
+            } 
+            else if(city.length != 0) {
+                document.getElementById("city-invalid").innerHTML = "";
+            }        
+            if(firstname.length<1 || lastname.length<1 || email.length<1 || phonenumber.length<1 ||
+                age.length<1 || weight.length<1 || gender.length<1 || bloodgroup.length<1 || city.length<1
+                )
+            {
+               return false;
+            }  
+            
+            //  add donor
+            fs.collection('donor').add({
+                firstname : firstname,
+                lastname : lastname,
+                email : email,
+                phonenumber : phonenumber,
+                age : age,
+                weight : weight,
+                gender : gender,
+                bloodgroup : bloodgroup,
+                city : city
+            })
+            .then(res => {
+                window.location.assign("https://uit-project-blood-bank.firebaseapp.com/donorlist.html");
+            })
+
+            document.getElementById("spinner-wrapper").style.display = "none";
+            spinner.style.display = "block";
+
+            });
+
+        </script>
+</body>
+</html>

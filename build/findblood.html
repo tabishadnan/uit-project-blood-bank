@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blood Bank | Find Blood</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#000000">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyD1_DHe6MRLvYqyw9G-Cw2YS5VWP_J2W8I",
+        authDomain: "uit-project-blood-bank.firebaseapp.com",
+        databaseURL: "https://uit-project-blood-bank.firebaseio.com",
+        projectId: "uit-project-blood-bank",
+        storageBucket: "uit-project-blood-bank.appspot.com",
+        messagingSenderId: "824057067083",
+        appId: "1:824057067083:web:98cda8dd226517dcbc3fce",
+        measurementId: "G-1F25XR2M3L"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      firebase.analytics();
+      const auth = firebase.auth();
+      const fs = firebase.firestore();
+    </script>
+</head>
+<body>
+    <div class="spinner-grow" id="spinner"></div>
+    <div class="container-fluid" id="spinner-wrapper">
+      <!-- Header Sec Start -->
+      <div class="row" id="wrap-header-main-row">
+        <div class="container">
+          <div class="row header-row">
+            <div class="col-4 header-fou">
+              <div id="img-logo"><a href="https://uit-project-blood-bank.firebaseapp.com/home.html" id="logo"><img src="images/bloodbanklogo.png" alt="Blood Bank" width="30px"><span id="logo-text">BLOODBANK</span></a></div>
+            </div>
+            <div class="col-4 header-thr text-center">
+              <p id="contact-header"><span id="phone-num-header">CALL &nbsp;&nbsp; <b>:</b>&nbsp;&nbsp; +92 3118454158</span></p>
+            </div>
+            <div class="col-4 text-right header-fiv">
+              <a href="#" onclick="signOut()" id="logout-btn-header"><i class="fa fa-lock"></i><span>LOGOUT</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="row" id="wrap-nav-main-row">
+          <div class="container" id="wrap-nav-container">
+            <nav class="navbar navbar-expand-md  navbar-light bg-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+           <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <ul class="navbar-nav " id="navbar-ul">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://uit-project-blood-bank.firebaseapp.com/home.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://uit-project-blood-bank.firebaseapp.com/becomeadonor.html">BECOME A DONOR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://uit-project-blood-bank.firebaseapp.com/findblood.html">FIND BLOOD DONOR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://uit-project-blood-bank.firebaseapp.com/donorlist.html">DONOR LIST</a>
+                    </li>
+                </ul>
+                </div>
+            </nav>
+          </div>
+        </div>
+        <!-- Header Sec end -->
+            <!-- Find blood sec start -->
+            <div class="row" id="find-blood-donor-sec">
+                <div class="container">
+                    <div class="row" id="form-wrapper">
+                        <div class="col-12 mb-3">
+                          <h1 class="">Find Blood Donor :</h1>
+                        </div>
+                        <div id="find-blood-form-wrapper">
+                            <form action="" class="form-inline" id="find-blood-donor-form" name="find-blood-donor">
+                                <div class="col-5 find-blood-donor-bloodgroup-col-four">
+                                  <label for=""><span id="bloodgroup">Blood Group * <b id="bloodgroup-invalid"></b></span><br>
+                                    <select name="find-blood-donor-bloodgroup-select" id="find-blood-donor-select">
+                                      <option value="">--Blood Group--</option>
+                                      <option value="A-">A-</option>
+                                      <option value="A+">A+</option>
+                                      <option value="AB-">AB-</option>
+                                      <option value="AB+">AB+</option>
+                                      <option value="B-">B-</option>
+                                      <option value="B+">B+</option>
+                                      <option value="O-">O-</option>
+                                      <option value="O+">O+</option>
+                                  </select>
+                                  </label>
+                                </div>
+                                <div class="col-5 city-col-four">
+                                  <label for=""><span id="city">City * <b id="city-invalid"></b></span><br>
+                                    <select name="find-blood-donor-city" id="find-blood-donor-sec-city">
+                                      <option value="">--Select City--</option>
+                                      <option value="Karachi">Karachi</option>
+                                      <option value="Islamabad">Islamabad</option>
+                                      <option value="Lahore">Lahore</option>
+                                      <option value="Faisalabad">Faisalabad</option>
+                                      <option value="Quetta">Quetta</option>
+                                      <option value="Sargodha">Sargodha</option>
+                                      <option value="Hyderabad">Hyderabad</option>
+                                      <option value="Rawalpindi">Rawalpindi</option>
+                                      <option value="Multan">Multan</option>
+                                  </select>
+                                  </label>
+                                </div>
+                                <div class="col-2 text-center btn-col-four">
+                                  <button class="btn btn-danger" id="find-blood-donor-btn">Search</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- Find blood sec end -->
+        <!-- Footer Sec Start -->
+        <div class="row wrap-footer-main-row mt-3">
+          <div class="container">
+            <div class="row footer-row mt-3">
+              <div class="col-12">
+                <p class="footer-text-content">
+                  We are world largest and trustful blood donation center. We have been working since 2018 with a prestigious vision to helping patient to provide blood. We are working all over the world, organizing blood donation campaign to grow awareness among the people to donate blood.
+                </p>
+              </div>
+            </div>
+            <div class="row footer-social-icon">
+              <div class="col-12 text-center">
+                <a href="https://wa.me/923118454158" class="fa fa-whatsapp"></a>
+                <a href="https://www.linkedin.com/in/tabishadnan/" class="fa fa-linkedin"></a>
+                <a href="https://github.com/tabishadnan/" class="fa fa-github"></a>
+              </div>
+              <div class="col-12 text-center mt-3">
+                <h1 class="text-white">Made With Love</h1>
+              </div>
+              <div class="col-12 text-center mt-3">
+                <p class="text-white">Copyright © 2020. All Right Reserved By Blood Bank</p>
+                <p class="text-white">Design & Develop By Tabish Adnan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer Sec End -->
+    </div>
+    <script src="js/jquery.js"></script>
+        <script src="js/search.js"></script>
+        <script>
+          // Find Blood Donor form valdation target btn
+        var find_blood_donor_btn = document.getElementById("find-blood-donor-btn");
+        document.getElementById('find-blood-donor-form').addEventListener("submit", function(event){
+            event.preventDefault();
+
+            var bloodgroup = document.forms["find-blood-donor"]["find-blood-donor-bloodgroup-select"].value;
+            var city = document.forms["find-blood-donor"]["find-blood-donor-city"].value;
+
+            if (bloodgroup.length<1) {
+                document.getElementById("bloodgroup-invalid").innerHTML = "Invalid";
+            }else if (bloodgroup.lengt != 0) {
+                document.getElementById("bloodgroup-invalid").innerHTML = "";
+            }
+            if (city.length<1) { 
+                document.getElementById("city-invalid").innerHTML = "Invalid";
+            } 
+            else if(city.length != 0) {
+                document.getElementById("city-invalid").innerHTML = "";
+            }        
+            if( bloodgroup.length<1 || city.length<1 )
+            {
+              return false;
+            } 
+
+            localStorage.setItem("search-blood-group", bloodgroup);
+            localStorage.setItem("search-blood-city",city);
+            window.location.assign('https://uit-project-blood-bank.firebaseapp.com/searchresult.html');
+
+        })
+        // function signOut
+        function signOut(){
+            auth.signOut()
+            .then(res =>{
+                window.location.assign("https://uit-project-blood-bank.firebaseapp.com/index.html")
+            })
+        }
+        </script>
+</body>
+</html>
